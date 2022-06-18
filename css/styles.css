@@ -11,22 +11,49 @@
   --basic-background: #ffffff;
   --secondary-background: #2f303a;
 }
-
+/* other */
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
   color: var(--basic-clr);
   background-color: var(--basic-background);
 }
+/* reset */
+h1, h2, h3, h4, p, ul{
+  margin:0;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Styles start*/
+
+.container{
+  width:1200px;
+  padding-left:15px;
+  padding-right:15px;
+  margin-left:auto;
+  margin-right:auto;
+  outline: auto;
+}
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
 }
+/* Styles end */
 
 /* header */
+.header-container{
+  display: flex;
+  align-items: center;
+}
 
 /* logo */
 .footer > .logo {
@@ -36,6 +63,8 @@ body {
   color: var(--white-clr);
 }
 .logo {
+  display: flex;
+  margin-right: 120px;
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
@@ -46,30 +75,56 @@ body {
   color: var(--accent-clr);
 }
 .curent {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right:40px;
   font-weight: 500;
   color: var(--accent-clr);
   font-size: 14px;
   line-height: 1.42;
   letter-spacing: 0.02em;
 }
+
+.site-nav-list{
+  display: flex;
+}
+
 .site-nav-link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right:40px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.42;
   letter-spacing: 0.02em;
   color: var(--basic-clr);
+
+  
 }
 .site-nav-link:hover,
 .site-nav-link:focus {
   color: var(--accent-clr);
 }
 /* contacts */
-.contacts-link {
+.contacts-list{
+  display: flex;
+  margin-left: auto;
+}
+
+
+.contacts-link{
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left:50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.42;
   letter-spacing: 0.02em;
   color: var(--secondary-clr);
+ 
 }
 .contacts-link:hover,
 .contacts-link:focus {
