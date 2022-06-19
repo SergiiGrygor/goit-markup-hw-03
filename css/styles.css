@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Остальной код */
+
 :root {
   /* fonts */
   --main-font: 'Roboto';
@@ -130,11 +138,18 @@ img{
 .contacts-link:focus {
   color: var(--accent-clr);
 }
+
 /* Hero */
-.hero {
+
+.hero-container{
   background-color: var(--secondary-background);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-header {
+  padding-bottom: 30px;
+  margin: auto;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -145,6 +160,7 @@ img{
 }
 /* button*/
 .hero-button {
+  margin: auto;
   border: none;
   cursor: pointer;
   background: #2196f3;
@@ -167,6 +183,15 @@ img{
   border-radius: 4px;
 }
 /* Feature */
+.feature-item:not(:last-child){
+  margin-right: 30px;
+}
+.feature-list{
+  margin: auto;
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -193,30 +218,53 @@ img{
   color: var(--secondary-clr);
 }
 
-/* work and tean title */
+/* work and team title */
+
 .section-title {
+  padding-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
+
+/* work */
+.work-list{
+   display: flex;
+}
+.work-img:not(:last-child){
+  margin-right: 30px;
+}
+
 /* team */
+.team-list{
+  display: flex;
+  padding-bottom: 94px;
+}
+.team-item:not(:last-child){
+  margin-right:30px;
+}
 .team-member {
+  padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
 .team-member-prof {
+  padding-top: 10px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   color: var(--secondary-clr);
 }
 /* footer */
-.footer {
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-background);
 }
 .address {
+  padding-top: 20px;
   font-style: normal;
 }
 .link-address {
