@@ -31,16 +31,14 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.card-set{
-  display: flex; 
+.card-set {
+  display: flex;
   flex-wrap: wrap;
-  margin:calc(-1 * var(--indent) / 2);
-  
+  margin: calc(-1 * var(--indent) / 2);
 }
-.card-set-item{
-  flex-basis: calc((100% - var(--indent) * var(--items) ) / var(--items));
-  margin:calc(var(--indent) / 2);
-   
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+  margin: calc(var(--indent) / 2);
 }
 /* reset */
 h1,
@@ -84,7 +82,7 @@ img {
 }
 
 /* logo */
-.footer > .container> .logo {
+.footer > .container > .logo {
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
@@ -343,7 +341,10 @@ img {
 
 /* Project */
 .project-list {
-  --items:3;
+  --items: 3;
+}
+.project-item {
+  border: 1px solid #eeeeee;
 }
 .project-title {
   padding-bottom: 4px;
@@ -356,6 +357,6 @@ img {
   line-height: 1.88;
   color: var(--secondary-clr);
 }
-.project-img{
+.project-img {
   padding-bottom: 20px;
 }
