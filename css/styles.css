@@ -30,9 +30,9 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background: #f5f4fa;
+  background: var(--white-clr);
 }
-/* .card-set{
+.card-set{
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
@@ -43,8 +43,8 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   flex-basis:calc((100% - 90px) / 3);
-} */
-.card-set {
+}
+/* .card-set {
   display: flex;
   flex-wrap: wrap;
   margin: calc(-1 * var(--indent) / 2);
@@ -52,7 +52,7 @@ body {
 .card-set-item {
   flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
   margin: calc(var(--indent) / 2);
-}
+} */
 /* reset */
 h1,
 h2,
@@ -97,10 +97,9 @@ img {
 /* logo */
 
 .logo {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-right: 93px;
-  margin-top: 25px;
-  margin-bottom: 25px;
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
@@ -120,16 +119,18 @@ img {
   font-size: 14px;
   line-height: 1.42;
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .site-nav-list {
   display: flex;
 }
-
-.nav-item {
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.site-nav-link:not(:last-child) {
+  margin-right: 40px;
+}
+.nav-item:not(:last-child) {
   margin-right: 40px;
 }
 .site-nav-link {
@@ -138,6 +139,9 @@ img {
   line-height: 1.42;
   letter-spacing: 0.02em;
   color: var(--basic-clr);
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .site-nav-link:hover,
 .site-nav-link:focus {
@@ -145,11 +149,6 @@ img {
 }
 /* contacts */
 
-.contacts-item {
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -159,6 +158,9 @@ img {
 }
 
 .contacts-link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.42;
@@ -191,7 +193,6 @@ img {
   color: var(--white-clr);
 }
 /* button*/
-
 .btn {
   display: block;
   margin-left: auto;
@@ -348,15 +349,19 @@ img {
 /* portfolio filters */
 .filters-list {
   display: flex;
-  flex-basis: 611px;
-  margin: auto;
   justify-content: center;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
 .btn-item:not(:last-child) {
   margin-right: 8px;
 }
+.filters-list>.btn-item>.activ-btn {
+  background-color: var(--accent-clr);
+  color: var(--white-clr);
+ 
+}
+
 .filter-button {
   padding: 6px 22px 6px 22px;
   font-family: inherit;
@@ -394,10 +399,6 @@ img {
   color: var(--secondary-clr);
 }
 
-
-.project-desc{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.project-desc {
+  padding: 20px 24px;
 }
