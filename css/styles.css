@@ -356,7 +356,7 @@ img {
 .btn-item:not(:last-child) {
   margin-right: 8px;
 }
-.filters-list>.btn-item>.activ-btn {
+.filter-button.activ-btn {
   background-color: var(--accent-clr);
   color: var(--white-clr);
  
